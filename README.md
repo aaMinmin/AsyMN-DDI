@@ -4,7 +4,7 @@ An Asymmetric Modulation Network for Drug-Drug Interaction Prediction Targeting 
 ## ⚙️ Environment Setup
 
 # Clone the repository
-git clone https://github.com/your-username/AsyMN-DDI.git
+git clone https://github.com/aaMinmin/AsyMN-DDI.git
 cd AsyMN-DDI
 
 # Install dependencies
