@@ -2,7 +2,7 @@ import warnings
 warnings.warn('ignore')
 import numpy as np
 from rdkit.Chem import MolFromSmiles,MolToSmiles
-from features import (atom_features,bond_features,
+from data_processing.features import (atom_features,bond_features,
                         one_of_k_encoding, one_of_k_encoding_unk)
 
 degrees = [0, 1, 2, 3, 4, 5]

@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 import networkx as nx
 from rdkit import Chem
-from utils import *
+from data_processing.utils import *
 
 # Must match EncoderModel_motif(max_graph_distance=8).
 SPD_MAX_GRAPH_DISTANCE = 8

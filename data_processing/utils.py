@@ -3,7 +3,7 @@ import numpy as np
 from collections import defaultdict
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import minimum_spanning_tree
-from mol_graph import array_rep_from_smiles
+from data_processing.mol_graph import array_rep_from_smiles
 import xml.etree.ElementTree as ET
 from IPython.display import SVG, display
 from matplotlib import colors

@@ -4,16 +4,27 @@ An Asymmetric Modulation Network for Drug-Drug Interaction Prediction Targeting 
 ## 📂 Repository Structure
 ```text
 ├── data/                           # Directory for datasets (prepare manually as per instructions below)
+    ├── classification
+        ├── nounseendrug
+            ├──tr_dataset.csv
+            ├──tst_dataset.csv
+            ├──val_dataset.csv
+        ├── unseendrug
+            ├──DDInter.csv          #External dataset
+            ├──tr_dataset-3.csv     
+            ├──val_dataset_unseen_onedrug.csv
+            ├──val_dataset_unseen_twodrugs.csv
 ├── data_processing/                # Mutual information statistics
-├── AsyMNfusion.py                  # Relevance-Redundancy Asymmetric Modulation Module
-├── dataset_processed.py            # dataset processing.
-├── evidential_tf.py                # EDL.
-├── features.py                     # Feature generation script
-├── kgnn.py                         # Knowledge graph extractor
-├── model_motif_level.py            # motif extractor
-├── mol_fingerprint_extractor.py    # FP extractor
-├── mol_graph.py                    # Script for extracting molecular motifs
-├── processing.py                   # to make preprocessed_drug_info.npy
+    ├── dataset_processed.py            # dataset processing.
+    ├── features.py                     # Feature generation script
+    ├── mol_graph.py                    # Script for extracting molecular motifs
+    ├── processing.py                   # to make preprocessed_drug_info.npy
+├── model/
+    ├── AsyMNfusion.py                  # Relevance-Redundancy Asymmetric Modulation Module
+    ├── evidential_tf.py                # EDL.
+    ├── kgnn.py                         # Knowledge graph extractor
+    ├── model_motif_level.py            # motif extractor
+    ├── mol_fingerprint_extractor.py    # FP extractor
 ├── train_nounseendrug.py           # Main script for training the model (nounseendrug)
 ├── train_unseendrug.py             # Main script for training the model (unseendrug:one;two)
 ├── requirements.txt                # Python dependencies

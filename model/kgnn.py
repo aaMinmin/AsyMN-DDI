@@ -5,7 +5,7 @@ from tensorflow.keras import layers,Sequential
 from tensorflow.keras import initializers
 from tensorflow.keras.regularizers import l2
 # from gat import GraphAttentionLayer
-from dataset_processed import smiles_to_graph
+from data_processing.dataset_processed import smiles_to_graph
 
     
 class SelfAttention1(layers.Layer):

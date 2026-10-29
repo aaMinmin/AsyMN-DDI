@@ -11,13 +11,13 @@ from tensorflow.keras.layers import Input, Dense, Dropout, Concatenate
 from tensorflow.keras.callbacks import Callback, EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.regularizers import l2
-from utils import *
-from dataset_processed import Graph_Bert_Dataset_fine_tune
-from model_motif_level import *
-from kgnn import *
-from mol_fingerprint_extractor import MolFingerprintMLPExtractor
-from AsyMNfusion import AsyMNFusion
-from evidential_tf import DirichletAlphasFromLogits, DirichletEvidentialLoss
+from data_processing.utils import *
+from data_processing.dataset_processed import Graph_Bert_Dataset_fine_tune
+from model.model_motif_level import *
+from model.kgnn import *
+from model.mol_fingerprint_extractor import MolFingerprintMLPExtractor
+from model.AsyMNfusion import AsyMNFusion
+from model.evidential_tf import DirichletAlphasFromLogits, DirichletEvidentialLoss
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
