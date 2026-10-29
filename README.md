@@ -93,6 +93,5 @@ N[C@@H](CC1=CNC=N1)C(O)=O inhibitor BE0000086
 To train the AsyMN-DDI model on the prepared datasets:
 
 run `python train_unseendrug.py` for unseendrugs (default: S3, using `--data_setting unseendrug-onedrug` to switch to S2), and run `python train_nounseendrug.py` for nounseendrug (S1).
-run
 
 
