@@ -1,5 +1,24 @@
-## Overview
+# Overview
 An Asymmetric Modulation Network for Drug-Drug Interaction Prediction Targeting Cross-Modal Redundancy
+
+## 📂 Repository Structure
+```text
+├── data/                           # Directory for datasets (prepare manually as per instructions below)
+├── data_processing/                # Mutual information statistics
+├── AsyMNfusion.py                  # Relevance-Redundancy Asymmetric Modulation Module
+├── dataset_processed.py            # dataset processing.
+├── evidential_tf.py                # EDL.
+├── features.py                     # Feature generation script
+├── kgnn.py                         # Knowledge graph extractor
+├── model_motif_level.py            # motif extractor
+├── mol_fingerprint_extractor.py    # FP extractor
+├── mol_graph.py                    # Script for extracting molecular motifs
+├── processing.py                   # to make preprocessed_drug_info.npy
+├── train_nounseendrug.py           # Main script for training the model (nounseendrug)
+├── train_unseendrug.py             # Main script for training the model (unseendrug:one;two)
+├── requirements.txt                # Python dependencies
+└── README.md                       # This file
+
 
 ## ⚙️ Environment Setup
 
